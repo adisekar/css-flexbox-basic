@@ -1,0 +1,23 @@
+{
+  "name": "css-flexbox-basic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adisekar/css-flexbox-basic.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adisekar/css-flexbox-basic/issues"
+  },
+  "homepage": "https://github.com/adisekar/css-flexbox-basic#readme",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}

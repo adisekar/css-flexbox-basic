@@ -1,0 +1,131 @@
+/* justify content is for main axis flex direction if row. horizontal center
+ align items is for col flex direction is row (vertical center)
+
+ justify content is for cross axis flex direction if column. vertical center
+ align items is for row flex direction is column (horizontal center)
+ 
+ flexFlow is combination of flex-direction and flex-wrap = row wrap
+
+ flexBasis should be used for width/height as it depends on flex direction row/col
+
+ flex: 1 1 25% => flex grow, flex shrink and flex basis of 25%
+
+ */
+
+/* .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: space-between;
+  /* flex-wrap: wrap-reverse; */
+/* height: 200px; 
+  float: right;
+  border: 1px solid #fff;
+  /* width: 800px; 
+  width: 400px;
+}
+
+.container div {
+  float: right;
+  width: 100px; 
+  width: 200px;
+  flex-shrink: 1;
+  flex-grow: 1; 
+}
+
+.container div:nth-child(2) {
+  order: -1; 
+  flex-grow: 2; 
+  flex-shrink: 2; 
+} */
+/* .centerDiv {
+  display: flex;
+  border: 1px solid #fff;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* .grid {
+  display: flex;
+}
+
+.gutters {
+  margin: -10px 0 10px -10px;
+}
+
+.gutters > .cell {
+  padding: 10px 0 0 10px;
+}
+
+.cell {
+  flex: 1; 
+}
+
+.cell > div {
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 100%;
+  padding: 10px;
+} */
+
+/* .media {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.figure {
+  flex: 1 1 30%;
+  align-self: flex-start;
+  order: 1;
+}
+
+.media-body {
+  flex: 1 1 60%;
+}
+
+p {
+  margin: 0 10px 20px 10px;
+} */
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+.header {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.main {
+  display: flex;
+  flex-grow: 1;
+}
+
+.secondary {
+  /* flex-basis: 200px; */
+  flex: 1 1 0%;
+  order: -1;
+}
+
+.tertiary {
+  /* flex-basis: 200px; */
+  flex: 1 1 0%;
+}
+
+.content {
+  flex: 4 1 0%;
+}
+
+.header,
+.footer {
+  text-align: center;
+  padding: 20px;
+}
+
+.main * {
+  padding: 20px;
+  border: 1px solid white;
+}
